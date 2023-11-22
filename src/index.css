@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[url('/img/background.jpg')] bg-[#051122] m-0 p-0 bg-top bg-no-repeat text-xs box-border font-sans antialiased dark:font-normal;
+}
