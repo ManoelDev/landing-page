@@ -1,12 +1,17 @@
+import { Link } from '@nextui-org/react'
 import Main from './components/main'
 
 function App() {
 
 
   return (<>
-    <div className='flex flex-col max-w-6xl mx-auto h-screen'>
-      <div className='flex justify-center py-8'>
-        <img src='/testlogo2.png' alt='' width={300} />
+    <div className='relative flex flex-col max-w-6xl mx-auto h-screen'>
+      <div className='flex justify-center py-8 -z-1'>
+        <Link href="/">
+          <video className='w-[380px]' autoPlay muted playsInline loop>
+            <source src="/movies/logo.webm" type="video/webm" />
+          </video>
+        </Link>
       </div>
       <Main />
 
